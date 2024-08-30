@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function changeB()
+{
+if (document.getElementById("abc").style.backgroundColor=="red")
+{
+document.getElementById("abc").style.backgroundColor="green";
+}
+else if (document.getElementById("abc").style.backgroundColor=="green")
+{
+document.getElementById("abc").style.backgroundColor="blue";
+}
+else
+{
+document.getElementById("abc").style.backgroundColor="red";
+}
+}
+</script>
+</head>
+<body id="abc" onload="setInterval(function(){changeB()},100)">
+</body>
+</html>
